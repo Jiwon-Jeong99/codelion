@@ -6,4 +6,9 @@ footer {
 }
 .mainbox {
     border : 1px solid #008d6a;
+    width : 610px;
+    text-align : center;
+    /* 박스 가운데 정렬 */
+    margin-left : auto;
+    margin-right : auto;
 }
