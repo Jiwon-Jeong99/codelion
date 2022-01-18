@@ -1,5 +1,9 @@
 footer {
     text-align : center;
-    background-color : black;
-    color : white;
+    background-color : #121212;
+    color : #919191;
+    font-size : 12px;
+}
+.mainbox {
+    border : 1px solid #008d6a;
 }
