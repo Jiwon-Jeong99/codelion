@@ -3,7 +3,10 @@ footer {
     background-color : #121212;
     color : #919191;
     font-size : 12px;
+    padding: 20px;
+    /* 박스와 글씨 사이 = padding */
 }
+
 .mainbox {
     border : 1px solid #008d6a;
     width : 610px;
@@ -11,6 +14,16 @@ footer {
     /* 박스 가운데 정렬 */
     margin-left : auto;
     margin-right : auto;
+
     padding:30px;
     margin: 30px;
+
+    /* 그림자 : x축(양수-오른쪽/음수-왼쪽) y축 블러값(blur) 그림자의퍼진정도(스프레드값) 그림자색깔 */
+    box-shadow: 0 1px 10px 10px rgba(175, 47, 175, 0.5);
+}
+
+.name-text {
+    font-size: 17px;
+    color: #7c7c7c;
+    font-weight: bold; 
 }
