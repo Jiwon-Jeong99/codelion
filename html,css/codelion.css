@@ -1,49 +1,78 @@
-body,h1,h2 {
-    margin: 0px;
-    padding: 0px;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+}
+
+body, h1, h2 {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    min-width: fit-content;
 }
 
 h1 {
     font-size: 36px;
     font-weight: bold;
     font-style: italic;
+    margin-bottom: 8px;
 }
 
 h2 {
     font-size: 20px;
     font-weight: lighter;
-    color: #282828;
-    border-bottom: 1px solid #2b2b2b;
+    color:#282828;
+    border-bottom: 1px solid #ebebeb;
     margin-bottom: 16px;
-    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
-footer {
-    text-align : center;
-    background-color : #121212;
-    color : #919191;
-    font-size : 12px;
-    padding: 20px;
-    /* 박스와 글씨 사이 = padding */
+.name-text {                                  
+    font-size: 17px;                         
+    color: #7c7c7c;
+    font-weight: bold;
 }
 
 .mainbox {
-    border : 1px solid #008d6a;
-    width : 610px;
-    text-align : right;
-    /* 박스 가운데 정렬 */
-    margin-left : auto;
-    margin-right : auto;
-
-    padding:30px;
+    width: 610px;
+    padding: 30px;
     margin: 30px;
-
-    /* 그림자 : x축(양수-오른쪽/음수-왼쪽) y축 블러값(blur) 그림자의퍼진정도(스프레드값) 그림자색깔 */
-    box-shadow: 0 1px 10px 10px rgba(175, 47, 175, 0.5);
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1)
 }
 
-.name-text {
-    font-size: 17px;
-    color: #7c7c7c;
-    font-weight: bold; 
+footer {
+    text-align: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    font-size: 12px;
+    color: #919191;
+}
+
+section {
+    margin-bottom: 24px;
+}
+
+.about-me-text {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.title-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    float: left;
+}
+
+/* p태그로 줄이 다르니까 float로 줄을 맞춰줌 */
+.year-text {
+    font-size: 11px;
+    font-weight: bold;
+    color: #282828;
+    float: right;
 }
