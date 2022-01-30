@@ -76,3 +76,18 @@ section {
     color: #282828;
     float: right;
 }
+
+/* float 요소들을 다 묶어주고 다음 html 요소들이 float 영향 안 받게 */
+.float-wrap {
+    overflow: hidden;
+}
+
+.desc-text {
+    font-size: 9px;
+}
+
+.desc-subtext {
+    font-size: 9px;
+    color: #282828;
+    margin-left: 16px;
+}
