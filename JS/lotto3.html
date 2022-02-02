@@ -9,9 +9,12 @@
     <h1>로또 번호 추첨기</h1>
     <script>
         var lotto = [];
-        for (var i=0; i<6; i++){
-            var num = parseInt(Math.random() * 45 + 1)
-            lotto.push(num)
+        for (var i = 0; i < 6; i++){
+            var num = parseInt(Math.random() * 45 + 1);
+            if (lotto.indexOf(num) == -1) {
+                //배열 안에 num이라는 값이 없으면 push
+                lotto.push(num);
+            }
         }
         document.write(lotto);
     </script>
