@@ -19,8 +19,8 @@
     <textarea class="form-control" rows="3" id="jasoseol">저는 인성 문제가 없습니다.</textarea>
     <span id="count">(0/200)</span>
     <script>
-        document.getElementById('jasoseol').value;
-        console.log(content.length);
+        var content = document.getElementById('jasoseol').value;
+        document.getElementById('count').innerHTML = content.length;
     </script>
 </body>
 </html>
