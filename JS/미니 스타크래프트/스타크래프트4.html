@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
 <head>
     <meta charset="UTF-8">
     <title>스타크래프트</title>
@@ -11,6 +15,10 @@
             width: 500px;
             height: 330px;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
         #drone {
             position: absolute;
             width: 100px;
@@ -18,6 +26,10 @@
             top: 100px;
             left: 60px;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
         #bunker {
             position: absolute;
             width: 150px;
@@ -25,6 +37,10 @@
             top: 80px;
             right: 20px;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
         #spit {
             display: none;
             position: absolute;
@@ -36,12 +52,17 @@
         }
     </style>
 </head>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
 <body>
     <div class='background'>
         <img id='drone' src="drone.png" alt="drone">
         <img id='spit' src="spit.png" alt="spit">
         <img id='bunker' src="bunker.png" alt="bunker">
     </div>
+<<<<<<< HEAD
     <script
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -50,4 +71,26 @@
         
     </script>
 </body>
+=======
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        var hp=3;
+        $('#drone') .click(function(){
+            $('#spit').fadeIn();
+            $('#spit').animate({left:'+=250'});
+            $('#spit').fadeOut(function(){
+                hp = hp - 1;
+                $('#hp').text('HP :' + hp);
+                if(hp==0){
+                    $('#bunker').fadeOut();
+                }
+            });
+            $('#spit').css({left:'150px'});
+            //다시 포탄으로 돌아감
+        })
+    </script>
+</body>
+
+>>>>>>> 59c7e5f6333591da7426e2186369f0a0607f421c
 </html>
