@@ -122,8 +122,10 @@
         var thousandDate = thousand.getFullYear() + '.' + (thousand.getMonth() + 1) + '.' + thousand.getDate();
         $('#thousand-date').text(thousandDate);
 
-        console.log(day);
-        console.log(day2);
+        // 지금부터 천일까지 남은 기간
+        var timeDiff3 = thousand.getTime() - now.getTime();
+        var day3 = Math.floor(timeDiff3 / (1000 * 60 * 60 * 24) + 1);
+        $('#thousand').text(day3 + '일 남음');
     </script>
 </body>
 
