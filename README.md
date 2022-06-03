@@ -9,3 +9,5 @@
 | (심화) 같이 푸는 Python| python|
 | 일단 만드는 Javascript | JS |
 | 실검에 오르는 세렝게티 동물 테스트 | HTML/CSS/JS |
+| 기획, 디자인 | 기획/디자인 |
+| React.js | 프론트엔드 |
